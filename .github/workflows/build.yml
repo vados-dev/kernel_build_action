@@ -16,7 +16,7 @@ jobs:
       uses: dabao1955/kernel_build_action@main
       with:
           kernel-url: https://github.com/vados-dev/android_kernel_sprd_lucyzh
-          kernel-dir: .
+          kernel-dir: sprd
           kernel-branch: main
           config: sl8541e_defconfig
           arch: arm
