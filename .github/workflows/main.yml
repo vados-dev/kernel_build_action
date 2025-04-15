@@ -33,11 +33,11 @@ jobs:
           kernel-branch: main
           config: sl8541e_defconfig
           arch: arm
-          aosp-gcc: false
-          aosp-clang: false
+          aosp-gcc: true
+          aosp-clang: true
           ksu: false
           ksu-version: main
-          android-version: 
+          android-version: 12
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: false
