@@ -20,8 +20,8 @@ jobs:
           kernel-branch: main
           config: sl8541e_defconfig
           arch: arm
-          aosp-gcc: true
-          aosp-clang: true
+          aosp-gcc: false
+          aosp-clang: false
           ksu: false
           ksu-version: main
           android-version: 12
