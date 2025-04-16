@@ -208,6 +208,8 @@ runs:
              if [ ${{ inputs.aosp-gcc }} = true ]; then
                  if [ ! -z ${{ inputs.android-version }} ]; then
                      export AOSP_CLANG_URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android${{ inputs.android-version }}-release/clang-${{ inputs.aosp-clang-version }}.tar.gz"
+                 elif [ -z ${{ inputs.android-version = false }} ]; then
+                     git clone https://github.com/ArchiDroid/Toolchain -b linaromod-4.9-arm-linux-androideabi --depth=1 ./gcc
                  else
                      export AOSP_CLANG_URL="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-${{ inputs.aosp-clang-version }}.tar.gz"
                  fi
